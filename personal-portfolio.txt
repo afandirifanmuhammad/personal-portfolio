@@ -6,3 +6,4 @@
 6. footer
 7. black box testing
 8. deploy
+9. hostinger
