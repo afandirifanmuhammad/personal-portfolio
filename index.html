@@ -4,95 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        *,
-        body {
-
-            font-family: 'Courier New', Courier, monospace;
-        }
-
-        h2 {
-            text-align: center;
-        }
-
-        nav {
-            padding: 20px;
-            background-color: darkred;
-            text-align: center;
-        }
-
-        nav a {
-            text-decoration: none;
-            color: white;
-            margin: 10px;
-            font-weight: 1000;
-        }
-
-        .biodata {
-            position: relative;
-            width: 50%;
-        }
-
-        .imageProfil {
-            border-radius: 5%;
-            background-color: darkgoldenrod;
-            width: 100%;
-            height: auto;
-            display: block;
-            opacity: 1;
-            transition: .5s ease;
-            backface-visibility: hidden;
-        }
-
-        .biodata:hover .image {
-            opacity: 0.3;
-        }
-
-        .biodata:hover .resume {
-            opacity: 1;
-        }
-
-        .resume {
-            opacity: 0;
-            transition: .5s ease;
-            position: absolute;
-            transform: translate(-50%, -50%);
-            text-align: center;
-            top: 55%;
-            left: 50%;
-            -ms-transform: translate(-50% -50%);
-        }
-
-        .resume button {
-            color: white;
-            background-color: darkred;
-            font-size: 16px;
-            padding: 16px 32px;
-        }
-
-        .skills {
-            width: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .skills img {
-            width: 200px;
-            height: 200px;
-        }
-
-        footer {
-            background-color: darkred;
-            padding: 50px;
-        }
-
-        footer p {
-            color: white;
-            font-weight: 1000;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
+    <title>landing page</title>
 </head>
 
 <body>
@@ -105,7 +18,7 @@
     </nav>
     <div class="biodata">
         <h2>profil</h2>
-        <img src="profil.JPG" alt="" class="imageProfil">
+        <img src="aset/profil.JPG" alt="" class="imageProfil">
         <div class="resume">
             <button>resume</button>
         </div>
@@ -139,11 +52,11 @@
     </div>
     <h2>skills</h2>
     <div class="skills">
-        <img src="html.png" alt="">
-        <img src="js.png" alt="">
-        <img src="next.png" alt="">
-        <img src="react.png" alt="">
-        <img src="laravel.png" alt="">
+        <img src="aset/html.png" alt="">
+        <img src="aset/js.png" alt="">
+        <img src="aset/laravel.png" alt="">
+        <img src="aset/next.png" alt="">
+        <img src="aset/react.png" alt="">
     </div>
 
     <h2>kontak</h2>
@@ -152,10 +65,6 @@
     <footer>
         <p>&copy; rifan afandi <span id="year"></span></p>
     </footer>
-
-    <script>
-        document.getElementById('year').textContent = new Date().getFullYear() + " - just a little bit typing";
-    </script>
 </body>
 
 </html>

@@ -1,0 +1,85 @@
+*,
+body {
+  font-family: "Courier New", Courier, monospace;
+}
+
+h2 {
+  text-align: center;
+}
+
+nav {
+  padding: 20px;
+  background-color: darkred;
+  text-align: center;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  margin: 10px;
+  font-weight: 1000;
+}
+
+.biodata {
+  position: relative;
+  width: 50%;
+}
+
+.imageProfil {
+  border-radius: 5%;
+  background-color: darkgoldenrod;
+  width: 100%;
+  height: auto;
+  display: block;
+  opacity: 1;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+}
+
+.biodata:hover .image {
+  opacity: 0.3;
+}
+
+.biodata:hover .resume {
+  opacity: 1;
+}
+
+.resume {
+  opacity: 0;
+  transition: 0.5s ease;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  top: 55%;
+  left: 50%;
+  -ms-transform: translate(-50% -50%);
+}
+
+.resume button {
+  color: white;
+  background-color: darkred;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+
+.skills {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.skills img {
+  width: 200px;
+  height: 200px;
+}
+
+footer {
+  background-color: darkred;
+  padding: 50px;
+}
+
+footer p {
+  color: white;
+  font-weight: 1000;
+}
