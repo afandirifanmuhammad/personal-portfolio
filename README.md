@@ -1,2 +1,2 @@
-# personal-portfolio
-tampilan beberapa identitas dan pengalaman saya 
+# personal-landing page
+tentang saya dan beberapa pengalaman saya 
