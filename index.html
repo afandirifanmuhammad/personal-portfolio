@@ -1,17 +1,161 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        *,
+        body {
+
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        nav {
+            padding: 20px;
+            background-color: darkred;
+            text-align: center;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+            margin: 10px;
+            font-weight: 1000;
+        }
+
+        .biodata {
+            position: relative;
+            width: 50%;
+        }
+
+        .imageProfil {
+            border-radius: 5%;
+            background-color: darkgoldenrod;
+            width: 100%;
+            height: auto;
+            display: block;
+            opacity: 1;
+            transition: .5s ease;
+            backface-visibility: hidden;
+        }
+
+        .biodata:hover .image {
+            opacity: 0.3;
+        }
+
+        .biodata:hover .resume {
+            opacity: 1;
+        }
+
+        .resume {
+            opacity: 0;
+            transition: .5s ease;
+            position: absolute;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            top: 55%;
+            left: 50%;
+            -ms-transform: translate(-50% -50%);
+        }
+
+        .resume button {
+            color: white;
+            background-color: darkred;
+            font-size: 16px;
+            padding: 16px 32px;
+        }
+
+        .skills {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .skills img {
+            width: 200px;
+            height: 200px;
+        }
+
+        footer {
+            background-color: darkred;
+            padding: 50px;
+        }
+
+        footer p {
+            color: white;
+            font-weight: 1000;
+        }
+    </style>
 </head>
+
 <body>
-    <h2>hellow world</h2>
-    <p>iam a software engineer</p>
-    <div>
-        <nav>home</nav>
-        <nav>about</nav>
-        <nav>contact</nav>
+    <nav>
+        <a href="">beranda</a>
+        <a href="">pengalaman</a>
+        <a href="">proyek</a>
+        <a href="">kreasi</a>
+        <a href="">kontak</a>
+    </nav>
+    <div class="biodata">
+        <h2>profil</h2>
+        <img src="profil.JPG" alt="" class="imageProfil">
+        <div class="resume">
+            <button>resume</button>
+        </div>
     </div>
+    <h2>portfolio</h2>
+    <div class="card">
+        <div class="cardPort1">
+            <h3>anonymous feedback</h3>
+            <button>kunjungi</button>
+        </div>
+        <div class="cardPort2">
+            <h3>mall pelayanan publik</h3>
+            <button>kunjungi</button>
+        </div>
+        <div class="cardPort3">
+            <h3>kebun giripurno</h3>
+            <button>kunjungi</button>
+        </div>
+        <div class="cardPort4">
+            <h3>desa bersatu</h3>
+            <button>kunjungi</button>
+        </div>
+        <div class="cardPort5">
+            <h3>fine grained gpt</h3>
+            <button>kunjungi</button>
+        </div>
+        <div class="cardPort6">
+            <h3>personal landing page</h3>
+            <button>kunjungi</button>
+        </div>
+    </div>
+    <h2>skills</h2>
+    <div class="skills">
+        <img src="html.png" alt="">
+        <img src="js.png" alt="">
+        <img src="next.png" alt="">
+        <img src="react.png" alt="">
+        <img src="laravel.png" alt="">
+    </div>
+
+    <h2>kontak</h2>
+
+
+    <footer>
+        <p>&copy; rifan afandi <span id="year"></span></p>
+    </footer>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear() + " - just a little bit typing";
+    </script>
 </body>
+
 </html>

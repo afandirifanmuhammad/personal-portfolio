@@ -1,9 +1,0 @@
-1. membuat navigasi
-2. deskripsi singkat identitas
-3. foto profil
-4. beberapa proyek yang telah dikerjakan
-5. resume
-6. footer
-7. black box testing
-8. deploy
-9. hostinger
